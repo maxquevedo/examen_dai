@@ -1,6 +1,6 @@
 <?php
-require('Model/classParticular.php');
-require('DB/conexion_bd.php');
+require '../Model/classParticular.php';
+require '../DB/conexion_bd.php';
 	if (count($_POST) > 0){
 		$sql = "SELECT * FROM particular where rutParticular = '{$_POST['rutParticular']}' AND passwordParticular = '{$_POST['passwordParticular']}'";
 		if ($rs = $GLOBALS['db']->Execute($sql)){

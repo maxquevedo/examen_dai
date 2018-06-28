@@ -1,6 +1,6 @@
 <?php
 	session_start();
-  require('DB/conexion_bd.php');
+  require '../DB/conexion_bd.php';
 	$codigoRandomCliente = rand();
 	$rutCliente = $_SESSION['rutParticular'];
 	$sql = "INSERT INTO ANALISISMUESTRAS VALUES ('','','','','','$codigoRandomCliente','','$rutCliente')";

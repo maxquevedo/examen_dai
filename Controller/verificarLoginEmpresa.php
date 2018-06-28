@@ -1,6 +1,6 @@
 <?php
-require('Model/classEmpresa.php');
-require('DB/conexion_bd.php');
+require '../Model/classEmpresa.php';
+require '../DB/conexion_bd.php';
 	if (count($_POST) > 0){
 		$sql = "SELECT * FROM empresa where rutEmpresa = '{$_POST['rutEmpresa']}' AND passwordEmpresa = '{$_POST['passwordEmpresa']}'";
 		if ($rs = $GLOBALS['db']->Execute($sql)){

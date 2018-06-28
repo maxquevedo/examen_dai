@@ -1,6 +1,6 @@
 <?php
 	session_start();
-  require('DB/conexion_bd.php');
+  require '../DB/conexion_bd.php';
 	$codigoRandomEmpresa= rand();
 	$codigoEmpresa=	$_SESSION['codigoEmpresa'];
 	$rutContacto= $_POST['rutContacto'];

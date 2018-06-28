@@ -1,6 +1,5 @@
 <?php
-	require('Model/funcionRegistrar.php');
-  require("Model/classParticular.php");
+  require '../Model/classParticular.php' ;
 	$rut = $_POST['rutParticular'];
 	$contraseña = $_POST['passwordParticular'];
   $nombre = $_POST['nombreParticular'];
