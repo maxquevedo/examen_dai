@@ -43,7 +43,7 @@ CREATE TABLE EMPLEADO(
   `passwordEmpleado` VARCHAR(15) NOT NULL,
   `emailEmpleado` VARCHAR(100) NOT NULL UNIQUE,
   `rolEmpleado` VARCHAR(15) NOT NULL,
-  `estadoEmpleado` VARCHAR(15) DEFAULT 'Habilitado'
+  `estadoEmpleado` VARCHAR(15) NOT NULL DEFAULT 'Habilitado'
 
 );
 
@@ -63,7 +63,7 @@ DROP TABLE IF EXISTS `ANALISISMUESTRASRECIBIDA`;
 CREATE TABLE ANALISISMUESTRASRECIBIDA(
 	`idAnalisisMuestrasRecibidad` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `codigoIdentificacion` VARCHAR(10) NOT NULL,
-  `estadoAnalisis` VARCHAR(20) DEFAULT 'Pendiente',
+  `estadoAnalisis` VARCHAR(20) NOT NULL DEFAULT 'Pendiente',
   `fechaTermino` VARCHAR(20) NULL,
   `ppm` INT NULL,
   `rutEmpleado` VARCHAR(10)  NULL

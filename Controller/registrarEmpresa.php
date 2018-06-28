@@ -5,6 +5,6 @@
 	$rut = $_POST['rutEmpresa'];
 	$contraseña = $_POST['passwordEmpresa'];
 	$direccion = $_POST['direccionEmpresa'];
-	$Empresa = new Empresa(''$nombre,$rut,$contraseña,$direccion);
+	$Empresa = new Empresa('',$nombre,$rut,$contraseña,$direccion);
 	$Empresa->registrarEmpresa();
 ?>

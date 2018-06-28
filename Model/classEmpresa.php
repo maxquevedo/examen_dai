@@ -8,7 +8,7 @@
 		public $direccion;
 
 		function __construct($codigo,$nombre,$rut,$password,$direccion){
-			$this->codigo = $cod;
+			$this->codigo = $codigo;
       $this->nombre = $nombre;
 			$this->rut = 	$rut;
 			$this->password = $password;

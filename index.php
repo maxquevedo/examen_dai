@@ -78,7 +78,7 @@
 			<div class="card" style="width: 18rem;">
 	  			<img class="card-img-top" src="Public/img/manos.jpg" alt="Card image cap" height="176px">
 	  			<div class="card-body">
-		    		<h5 class="card-title">Trasnparencia ante todo</h5>
+		    		<h5 class="card-title">Transparencia ante todo</h5>
 	    			<p class="card-text">Visita nuestra página para ver el código, el estado de tu muestra y los resultados de ésta.</p>
 	  			</div>
 			</div>
