@@ -1,6 +1,6 @@
 <?php
 	require '../DB/conexion_bd.php';
-	class Empresa{
+	class Particular{
 		public $codigo;
     public $rut;
     public $password;

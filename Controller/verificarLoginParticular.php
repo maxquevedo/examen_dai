@@ -16,7 +16,7 @@ require '../DB/conexion_bd.php';
         $_SESSION['direccion'] = $rs->fields['direccionParticular'];
         $_SESSION['email'] = $rs->fields['emailParticular'];
         $_SESSION['telefono'] = $rs->fields['telefonoParticular'];
-				echo "<script>alert('Bienvenido ".$rs->fields['nombreParticular']."'); window.location.href='form-envioMuestraParticular.php'</script>";
+				echo "<script>alert('Bienvenido ".$rs->fields['nombreParticular']."'); window.location.href='../Views/index.php'</script>";
 			}
 		}
 

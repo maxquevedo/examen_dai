@@ -1,5 +1,5 @@
 
-<form class="form-control" method="post" action="/examen_dai/Controller/registrarEmpresa.php" name="registrar">
+<form class="form-control" method="post" action="/examen_dai/Controller/registrarEmpresaContacto.php" name="registrar">
 	<div class="row form-group ">
 		<h4 class=" col-lg-9 font-weight-bold offset-md-2 text-center"> Empresa</h4>
 	</div>

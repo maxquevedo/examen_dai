@@ -14,17 +14,16 @@
 		}
 		function registrarContacto(){
 		  $sql = "INSERT INTO CONTACTO VALUES (
-			'$this->email',
-			'$this->nombre',
-		  '$this->rut' ,
-			'$this->telefono')";
-
+			'$this->emailContacto ',
+			'$this->nombreContacto ',
+		  '$this->rutContacto ' ,
+			'$this->telefonoContacto ')";
 		  if($rs = $GLOBALS['db']->Execute($sql)){
 		    echo "<script>alert('Contacto registrado con exito');</script>";
-		  }else{
+				echo "<script>window.load.href='../index.php'</script>";
+			else if{
 		    echo "<h3>Error al registrar contacto</h3>";
-		    sleep(5);
-		    echo "<script>window.load.href='../index.php'</script>";
 		  }
 		}
 	}
+}

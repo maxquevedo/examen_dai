@@ -17,6 +17,9 @@
 		}
 	</style>
 </head>
+<?php
+    require('../DB/conexion_bd.php');
+  ?>
 <body>
 	<div class="container">
 		<div class="row">
@@ -42,11 +45,10 @@
 	</div>
 	<nav class="navbar navbar-dark bg-dark">
 		<ul class="nav">
-			<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>
+			<li class="nav-item"><a class="nav-link" href="../Views/index.php">Inicio</a></li>
 		</ul>
 		<ul class="nav justify-content-end">
-			<li class="nav-item"><a class="nav-link" href="registrar.php">Registrarse</a></li>
-			<li class="nav-item"><a class="nav-link" href="iniciarSesion.php">Iniciar Sesión</a></li>
+		  <li class="nav-link active"><a class="text-right" style="color:white;" href="../Controller/cerrarSesion.php" id="cerrar">Cerrar Sesión</a></li>
 		</ul>
 	</nav>
-	<div class="container">
+	<div class="container" style="margin-top: 2%;">

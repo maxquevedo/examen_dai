@@ -1,6 +1,6 @@
 <?php
   require '../Model/classEmpresa.php';
-	require '../Model/classContacto.php';
+  /*require '../Model/classContacto.php';*/
   $nombre = $_POST['nombreEmpresa'];
 	$rut = $_POST['rutEmpresa'];
 	$contraseña = $_POST['passwordEmpresa'];
@@ -10,7 +10,9 @@
 	$rutContacto=$_POST['rutContacto'];
 	$telefonoContacto=$_POST['telefonoContacto'];
 	$Empresa = new Empresa('',$nombre,$rut,$contraseña,$direccion);
-	$Contacto=new Contacto($emailContacto,$nombreContacto,$rutContacto,$telefonoContacto);
-	$Empresa->registrarEmpresa();
-	$Contacto->registrarContacto();
+  $sql1 = "INSERT INTO contacto VALUES ('$emailContacto','$nombreContacto','$rutContacto','$telefonoContacto')";
+  if($GLOBALS['db']->Execute($sql1)){
+  echo "<script>alert('Se ha registrado el contacto correctamente');</script>";
+  $Empresa->registrarEmpresa();
+}
 ?>
