@@ -3,7 +3,7 @@
 	include('head.php');
 ?>
 <div id="content" class="row form-group" style="margin-top: 2%;">
-	<form class="form-control" method="post" action="" name="registrar">
+	<form class="form-control" method="post" action="" name="registrar" style="padding:15px;">
 		<div class="row form-group">
 			<span class="offset-md-4"><h4>¿Que quieres registrar?</h4></span>
 		</div>

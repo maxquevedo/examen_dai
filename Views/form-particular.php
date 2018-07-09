@@ -51,10 +51,10 @@
 		</div>
 	</div>
 	<div class="row form-group">
-		<div class="col-md-1 offset-md-5 form-group">
+		<div class="col-lg-1 offset-lg-5 form-group">
 			<button type="submit" class="btn btn-primary">Enviar</button>
 		</div>
-		<div class="col-md1">
+		<div class="col-lg-1">
 			<button id="btnLimpiar" class="btn btn-secondary">Limpiar</button>
 		</div>
 	</div>
