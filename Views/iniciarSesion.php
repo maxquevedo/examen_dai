@@ -1,9 +1,9 @@
-<<?php
+<?php
 	include('head.php');
 ?>
 <div id="content" style="margin-top:2%;  margin-bottom:2%;">
 	<div class="row form-group">
-			<form class="form-control form-group" name="login" action="/examen_dai/Controller/verificarLoginParticular.php" method="post">
+			<form class="form-control form-group" name="login" action="../Controller/verificarLoginParticular.php" method="post">
 				<div class="row form-group">
 					<div class="col-md-1 offset-md-5">
 						<h3><center>Particular</center></h3>
@@ -33,7 +33,7 @@
 			</form>
 	</div>
 		<div class="row form-group">
-			<form class="form-control form-group" name="login" action="verificarLoginEmpresa.php" method="post">
+			<form class="form-control form-group" name="login" action="../Controller/verificarLoginEmpresa.php" method="post">
 				<div class="row form-group">
 					<div class="col-md-1 offset-md-5">
 						<h3><center>Empresa</center></h3>

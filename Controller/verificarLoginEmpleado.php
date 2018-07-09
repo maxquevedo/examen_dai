@@ -9,12 +9,13 @@ require '../DB/conexion_bd.php';
 			}else{
 				session_start();
 				$_SESSION['codigo'] = $rs->fields['codigoEmpleado'];
-        $_SESSION['rut'] = $rs->fields['rutEmpleado'];
-				$_SESSION['nombre'] = $rs->fields['nombreEmpleado'];
-        $_SESSION['password'] = $rs->fields['passwordEmpleado'];
+		        $_SESSION['rut'] = $rs->fields['rutEmpleado'];
+				$_SESSION['usuario'] = $rs->fields['nombreEmpleado'];
+        		$_SESSION['password'] = $rs->fields['passwordEmpleado'];
 				$_SESSION['email'] = $rs->fields['emailEmpleado'];
-        $_SESSION['categoria'] = $rs->fields['categoriaEmpleado'];
-        $_SESSION['estado'] = $rs->fields['estadoEmpleado'];
+        		$_SESSION['categoria'] = $rs->fields['categoriaEmpleado'];
+        		$_SESSION['estado'] = $rs->fields['estadoEmpleado'];
+        		$_SESSION['tipo'] = "Empleado";
 
 			if ($rs->fields['estadoEmpleado']=='Habilitado') {
 				if($rs->fields['categoria']=='A'){

@@ -10,10 +10,11 @@ require '../DB/conexion_bd.php';
 			}else{
 				session_start();
 				$_SESSION['codigo'] = $rs->fields['codigoEmpresa'];
-        $_SESSION['nombre'] = $rs->fields['nombreEmpresa'];
+        		$_SESSION['usuario'] = $rs->fields['nombreEmpresa'];
 				$_SESSION['rut'] = $rs->fields['rutEmpresa'];
-        $_SESSION['password'] = $rs->fields['passwordEmpresa'];
-        $_SESSION['direccion'] = $rs->fields['direccionEmpresa'];
+        		$_SESSION['password'] = $rs->fields['passwordEmpresa'];
+        		$_SESSION['direccion'] = $rs->fields['direccionEmpresa'];
+        		$_SESSION['tipo'] = "Empresa";
 				echo "<script>alert('Bienvenido ".$rs->fields['rutEmpresa']."'); window.location.href='form-envioMuestraEmpresa.php'</script>";
 			}
 		}

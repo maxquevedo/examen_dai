@@ -46,11 +46,17 @@
 		</ul>
 		<ul class="nav justify-content-end">
 			<?php
-				session_start();
-				if(isset($_SESSION))
+				if(isset($_SESSION['usuario'])){
+					$usuario = $_SESSION['usuario'];
+					$tipo = $_SESSION['tipo'];
+					echo '<li class="nav-item nav-link" style="color:white">Bienvenido '.$usuario.'</li>';
+					echo '<li class="nav-item nav-link" style="color:white">Eres tipo '.$tipo.'</li>';
+					echo '<li class="nav-item"><a class="nav-link" href="../Controller/cerrarSesion.php">Cerrar Sesion</a></li>';
+				}else{
+					echo '<li class="nav-item"><a class="nav-link" href="registrar.php">Registrarse</a></li>';
+					echo '<li class="nav-item"><a class="nav-link" href="iniciarSesion.php">Iniciar Sesión</a></li>';
+				}
 			?>
-			<li class="nav-item"><a class="nav-link" href="registrar.php">Registrarse</a></li>
-			<li class="nav-item"><a class="nav-link" href="iniciarSesion.php">Iniciar Sesión</a></li>
 		</ul>
 	</nav>
 	<div class="container">

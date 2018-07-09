@@ -1,8 +1,8 @@
 <?php
-  require '../Model/classParticular.php' ;
+  	require '../Model/classParticular.php' ;
 	$rut = $_POST['rutParticular'];
 	$contraseña = $_POST['passwordParticular'];
-  $nombre = $_POST['nombreParticular'];
+  	$nombre = $_POST['nombreParticular'];
 	$direccion = $_POST['direccionParticular'];
 	$email = $_POST['emailParticular'];
 	$telefono = $_POST['telefonoParticular'];

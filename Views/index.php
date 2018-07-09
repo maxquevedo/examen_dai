@@ -1,10 +1,6 @@
 <?php
 	session_start();
-	if(count($_SESSION) < 1){
-		include('head.php');
-	}else{
-		include('headControlParticular.php');
-	}
+	include('head.php');
 ?>
 	<div class="row justify-content-center" style="padding:30px;">
 		<h1>¡Registra tus muestras con nosotros!</h1>
