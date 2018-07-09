@@ -18,12 +18,21 @@ require '../DB/conexion_bd.php';
         		$_SESSION['tipo'] = "Empleado";
 
 			if ($rs->fields['estadoEmpleado']=='Habilitado') {
+<<<<<<< HEAD
 				if($rs->fields['categoria']=='A'){
 				echo "<script>alert('Bienvenido ".$rs->fields['nombreEmpleado']." [Nivel: Administrador]'); window.location.href='../Views/indexEmpleadoA.php'</script>";
 				}else if ($rs->fields['categoria']=='R') {
 				echo "<script>alert('Bienvenido ".$rs->fields['nombreEmpleado']." [Nivel: Receptor de Muestras]'); window.location.href='../Views/indexEmpleadoR.php'</script>";
 				}else if ($rs->fields['categoria']=='T') {
 				echo "<script>alert('Bienvenido ".$rs->fields['nombreEmpleado']." [Nivel: Tecnico de Laboratorio]'); window.location.href='../Views/indexEmpleadoT.php'</script>";
+=======
+				if($rs->fields['categoriaEmpleado']=='A'){
+				echo "<script>alert('Bienvenido ".$rs->fields['nombreEmpleado']." [Nivel: Administrador]'); window.location.href='../Views/index.php'</script>";
+				}else if ($rs->fields['categoriaEmpleado']=='R') {
+				echo "<script>alert('Bienvenido ".$rs->fields['nombreEmpleado']." [Nivel: Receptor de Muestras]'); window.location.href='indexEmpleadoR.php'</script>";
+				}else if ($rs->fields['categoriaEmpleado']=='T') {
+				echo "<script>alert('Bienvenido ".$rs->fields['nombreEmpleado']." [Nivel: Tecnico de Laboratorio]'); window.location.href='indexEmpleadoT.php'</script>";
+>>>>>>> 6086bb07ddc08e79b60b579afdc12aa750813a00
 				}else{
 				echo "<script>alert('El empleado ".$rs->fields['nombreEmpleado']." no tiene categoria definida'); window.location.href='../Views/index.php'</script>";
 				}

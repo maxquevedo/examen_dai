@@ -1,5 +1,15 @@
+<<<<<<< HEAD
+<?php
+	include('head.php');
+?>
+<form class="form-control" method="post" action="/examen_dai/Controller/registrarEmpresaContacto.php" name="registrar">
+	<div class="row form-group ">
+		<h4 class=" col-lg-9 font-weight-bold offset-md-2 text-center"> Empresa</h4>
+	</div>
+=======
 
 <form class="form-control" method="post" action="../Controller/registrarEmpresaContacto.php" name="registrar">
+>>>>>>> 774974087b00bfbe6a82997e3df9134f4940e891
 	<div class="row form-group">
 		<h4 class="col-lg-12 font-weight-bold text-center"> Empresa</h4>
 	</div>
@@ -72,10 +82,17 @@
 		</div>
 	</div>
 	<div class="row form-group">
+<<<<<<< HEAD
+		<div class="col-md-1 offset-md-5 form-group">
+			<button type="submit" class="btn btn-primary">Registrar</button>
+		</div>
+		<div class="col-md-1">
+=======
 		<div class="col-lg-1 offset-lg-5 form-group">
 			<button type="submit" class="btn btn-primary">Enviar</button>
 		</div>
 		<div class="col-lg-1">
+>>>>>>> 774974087b00bfbe6a82997e3df9134f4940e891
 			<button id="btnLimpiar" class="btn btn-secondary">Limpiar</button>
 		</div>
 	</div>
