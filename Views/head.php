@@ -72,8 +72,9 @@
 											break;
 										}
 									}
+									break;
 						case 'Empresa':
-							//echo '<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>';
+							echo '<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>';
 						break;
 						case 'Particular':
 							echo '<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>';
@@ -84,7 +85,7 @@
 						break;
 					}
 				}else{
-					//echo '<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>';
+					echo '<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>';
 				}
 			?>
 		</ul>
