@@ -45,6 +45,10 @@
 			<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>
 		</ul>
 		<ul class="nav justify-content-end">
+			<?php
+				session_start();
+				if(isset($_SESSION))
+			?>
 			<li class="nav-item"><a class="nav-link" href="registrar.php">Registrarse</a></li>
 			<li class="nav-item"><a class="nav-link" href="iniciarSesion.php">Iniciar Sesión</a></li>
 		</ul>

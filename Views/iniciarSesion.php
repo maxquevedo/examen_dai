@@ -61,7 +61,7 @@
 					</div>
 				</div>
 			</form>
-      <form class="form-control form-group" name="login" action="verificarLoginEmpleado.php" method="post">
+      <form class="form-control form-group" name="login" action="../Controller/verificarLoginEmpleado.php" method="post">
 				<div class="row form-group">
 					<div class="col-md-1 offset-md-5">
 						<h3><center>Empleado</center></h3>
