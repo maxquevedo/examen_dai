@@ -72,6 +72,7 @@
 											break;
 										}
 									}
+									break;
 						case 'Empresa':
 							echo '<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>';
 						break;
@@ -106,4 +107,4 @@
 			?>
 		</ul>
 	</nav>
-	<div class="container">
+	<div id="contenedor" class="container">

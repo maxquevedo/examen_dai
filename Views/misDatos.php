@@ -4,7 +4,7 @@
 	require('../DB/conexion_bd.php');
 	echo "<br>";
 	$rut = $_SESSION['rut'];
-	echo "<table class='table table-bordered'>";
+	echo "<table id='tabla' class='table table-bordered'>";
 	echo "<thead>";
 	echo "<tr>";
 	echo "<th>Rut</th>";
@@ -34,35 +34,22 @@
 	}
 	echo "</tbody>";
 	echo "</table>";
-	echo "<div class='container'><div class='row'><div class='col'>";
-	echo "<button id='rut' class='btn btn-primary'>Cambiar Rut</button>";
-	echo "</div><div class='col'>";
-	echo "<button id='nombre'class='btn btn-info'>Cambiar Nombre</button>";
-	echo "</div><div class='col'>";
-	echo "<button id='contraseña'class='btn btn-success'>Cambiar Contraseña</button>";
-	echo "</div><div class='col'>";
-	echo "<button id='correo'class='btn btn-warning'>Cambiar Correo</button>";
+	echo "<div class='row'><div class='col'>";
+	echo "<button id='cambiar'class='btn btn-success'>Cambiar datos </button>";
 	echo "</div><div class='col'>";
 	echo "<button id='bajar'class='btn btn-danger'>Dar cuenta de baja</button>";
 	echo "</div></div>";
-	echo "<script> 
-			$('#rut').click(function(){
-				var nuevo = prompt('Ingrese su nuevo rut');
-			})
-			$('#nombre').click(function(){
-				var nuevo = prompt('Ingrese su nuevo nombre');
-			})
-			$('#contraseña').click(function(){
-				var nuevo = prompt('Ingrese su nueva contraseña');
-			})
-			$('#correo').click(function(){
-				var nuevo = prompt('Ingrese su nuevo correo');
-			})
-			$('#bajar').click(function(){
-				var confirma = confirm('¿Seguro que desea dar de baja su cuenta?');
-				if (confirma){
-					window.location.href='../Controller/dar_de_baja.php';
-				}
-			});
-		 </script>";
-?>
+	?>
+
+	<script> 
+		$('#cambiar').click(function(e){
+			e.preventDefault();
+			$("#contenedor").load('../Controller/update_empleado.php');
+		});
+		$('#bajar').click(function(){
+			var confirma = confirm('¿Seguro que desea dar de baja su cuenta?');
+			if (confirma){
+				window.location.href='../Controller/dar_de_baja.php';
+			}
+		});
+	</script>
