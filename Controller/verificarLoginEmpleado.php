@@ -17,11 +17,11 @@ require '../DB/conexion_bd.php';
         $_SESSION['estado'] = $rs->fields['estadoEmpleado'];
 
 			if ($rs->fields['estadoEmpleado']=='Habilitado') {
-				if($rs->fields['categoria']=='A'){
+				if($rs->fields['categoriaEmpleado']=='A'){
 				echo "<script>alert('Bienvenido ".$rs->fields['nombreEmpleado']." [Nivel: Administrador]'); window.location.href='indexEmpleadoA.php'</script>";
-				}else if ($rs->fields['categoria']=='R') {
+				}else if ($rs->fields['categoriaEmpleado']=='R') {
 				echo "<script>alert('Bienvenido ".$rs->fields['nombreEmpleado']." [Nivel: Receptor de Muestras]'); window.location.href='indexEmpleadoR.php'</script>";
-				}else if ($rs->fields['categoria']=='T') {
+				}else if ($rs->fields['categoriaEmpleado']=='T') {
 				echo "<script>alert('Bienvenido ".$rs->fields['nombreEmpleado']." [Nivel: Tecnico de Laboratorio]'); window.location.href='indexEmpleadoT.php'</script>";
 				}else{
 				echo "<script>alert('El empleado ".$rs->fields['nombreEmpleado']." no tiene categoria definida'); window.location.href='iniciarSesion.php'</script>";
