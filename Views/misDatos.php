@@ -34,4 +34,38 @@
 	}
 	echo "</tbody>";
 	echo "</table>";
+	echo "<div class='container'><div class='row'><div class='col'>";
+	echo "<button id='rut' class='btn btn-primary'>Cambiar Rut</button>";
+	echo "</div><div class='col'>";
+	echo "<button id='nombre'class='btn btn-info'>Cambiar Nombre</button>";
+	echo "</div><div class='col'>";
+	echo "<button id='contraseña'class='btn btn-success'>Cambiar Contraseña</button>";
+	echo "</div><div class='col'>";
+	echo "<button id='correo'class='btn btn-warning'>Cambiar Correo</button>";
+	echo "</div><div class='col'>";
+	echo "<button id='bajar'class='btn btn-danger'>Dar cuenta de baja</button>";
+	echo "</div></div>";
+	echo "<script> 
+			$('#rut').click(function(){
+				var nuevo = prompt('Ingrese su nuevo rut');
+			})
+			$('#nombre').click(function(){
+				var nuevo = prompt('Ingrese su nuevo nombre');
+			})
+			$('#contraseña').click(function(){
+				var nuevo = prompt('Ingrese su nueva contraseña');
+			})
+			$('#correo').click(function(){
+				var nuevo = prompt('Ingrese su nuevo correo');
+			})
+			$('#bajar').click(function(){
+				var confirma = confirm('¿Seguro que desea dar de baja su cuenta?');
+				if (confirma)
+					alert('Ok');
+
+			})
+
+			
+
+		 </script>";
 ?>
