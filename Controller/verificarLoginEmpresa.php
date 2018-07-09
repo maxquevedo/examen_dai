@@ -15,11 +15,11 @@ require '../DB/conexion_bd.php';
         		$_SESSION['password'] = $rs->fields['passwordEmpresa'];
         		$_SESSION['direccion'] = $rs->fields['direccionEmpresa'];
         		$_SESSION['tipo'] = "Empresa";
-				echo "<script>alert('Bienvenido ".$rs->fields['rutEmpresa']."'); window.location.href='form-envioMuestraEmpresa.php'</script>";
+				echo "<script>alert('Bienvenido ".$rs->fields['rutEmpresa']."'); window.location.href='../index.php'</script>";
 			}
 		}
 
 	}else{
-		echo "NO";
+		echo "Lo sentimos, algo ha salido mal.";
 	}
 ?>
