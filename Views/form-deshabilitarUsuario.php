@@ -1,6 +1,6 @@
 <?php
+  	session_start();
 	include('head.php');
-  session_start();
 ?>
 		<div id="content" class="row form-group">
 			<form class="form-control" method="get" action="" name="deshabilitar">
