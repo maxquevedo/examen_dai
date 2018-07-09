@@ -14,7 +14,7 @@
 					</div>
 					<div class="col offset-md-1">
 						<input id="btnCliente" type="radio" name="btnTipoUsuario">
-						<label for="btnCliente"><h5>Cliente</h5></label>
+						<label for="btnCliente"><h5>Particular</h5></label>
 					</div>
           <div class="col offset-md-0">
 						<input id="btnEmpleado" type="radio" name="btnTipoUsuario">
@@ -27,7 +27,7 @@
 <script>
 
 	$("#btnCliente").click(function(){
-		$("#content").load('mostrarClientes.php');
+		$("#content").load('mostrarParticulares.php');
 	});
 	$("#btnAdministrador").click(function(){
 		$("#content").load('mostrarAdministradores.php');
