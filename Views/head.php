@@ -42,15 +42,42 @@
 	</div>
 	<nav class="navbar navbar-dark sticky-top" style="background-color:  rgb(15,105,180);">
 		<ul class="nav">
-			<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>
+			<?php
+				if(isset($_SESSION['tipo'])){
+					$tipo = $_SESSION['tipo'];
+					switch ($tipo) {
+						case 'Empleado':
+							echo '<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>';
+							echo '<li class="nav-item"><a class="nav-link" href="#">Ingresar Muestra</a></li>';
+							echo '<li class="nav-item"><a class="nav-link" href="#">Ver muestras</a></li>';
+							echo '<li class="nav-item"><a class="nav-link" href="../Views/misDatos.php">Mis datos</a></li>';
+							break;
+						case 'Empresa':
+							echo '<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>';
+						break;
+						case 'Particular':
+							echo '<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>';
+							echo '<li class="nav-item"><a class="nav-link" href="#">Ver mis muestras</a></li>';
+							echo '<li class="nav-item"><a class="nav-link" href="#">Cuenta</a></li>';
+						break;
+						default:
+							echo '<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>';
+						break;
+					}
+				}else{
+					echo '<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>';
+				}
+			?>
 		</ul>
 		<ul class="nav justify-content-end">
 			<?php
 				if(isset($_SESSION['usuario'])){
 					$usuario = $_SESSION['usuario'];
 					$tipo = $_SESSION['tipo'];
+					if($tipo == "Empleado"){
+
+					}
 					echo '<li class="nav-item nav-link" style="color:white">Bienvenido '.$usuario.'</li>';
-					echo '<li class="nav-item nav-link" style="color:white">Eres tipo '.$tipo.'</li>';
 					echo '<li class="nav-item"><a class="nav-link" href="../Controller/cerrarSesion.php">Cerrar Sesion</a></li>';
 				}else{
 					echo '<li class="nav-item"><a class="nav-link" href="registrar.php">Registrarse</a></li>';

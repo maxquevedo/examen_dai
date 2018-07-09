@@ -19,16 +19,16 @@ require '../DB/conexion_bd.php';
 
 			if ($rs->fields['estadoEmpleado']=='Habilitado') {
 				if($rs->fields['categoria']=='A'){
-				echo "<script>alert('Bienvenido ".$rs->fields['nombreEmpleado']." [Nivel: Administrador]'); window.location.href='indexEmpleadoA.php'</script>";
+				echo "<script>alert('Bienvenido ".$rs->fields['nombreEmpleado']." [Nivel: Administrador]'); window.location.href='../Views/indexEmpleadoA.php'</script>";
 				}else if ($rs->fields['categoria']=='R') {
-				echo "<script>alert('Bienvenido ".$rs->fields['nombreEmpleado']." [Nivel: Receptor de Muestras]'); window.location.href='indexEmpleadoR.php'</script>";
+				echo "<script>alert('Bienvenido ".$rs->fields['nombreEmpleado']." [Nivel: Receptor de Muestras]'); window.location.href='../Views/indexEmpleadoR.php'</script>";
 				}else if ($rs->fields['categoria']=='T') {
-				echo "<script>alert('Bienvenido ".$rs->fields['nombreEmpleado']." [Nivel: Tecnico de Laboratorio]'); window.location.href='indexEmpleadoT.php'</script>";
+				echo "<script>alert('Bienvenido ".$rs->fields['nombreEmpleado']." [Nivel: Tecnico de Laboratorio]'); window.location.href='../Views/indexEmpleadoT.php'</script>";
 				}else{
-				echo "<script>alert('El empleado ".$rs->fields['nombreEmpleado']." no tiene categoria definida'); window.location.href='iniciarSesion.php'</script>";
+				echo "<script>alert('El empleado ".$rs->fields['nombreEmpleado']." no tiene categoria definida'); window.location.href='../Views/index.php'</script>";
 				}
 			}else{
-			echo "<script>alert('El empleado ".$rs->fields['nombreEmpleado']." se encuentra deshabilitado'); window.location.href='iniciarSesion.php'</script>";
+			echo "<script>alert('El empleado ".$rs->fields['nombreEmpleado']." se encuentra deshabilitado'); window.location.href='../Views/iniciarSesion.php'</script>";
 			}
 		}
 	}
