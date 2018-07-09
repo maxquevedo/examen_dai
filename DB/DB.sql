@@ -20,9 +20,7 @@ CREATE TABLE CONTACTO(
 	`rutContacto` VARCHAR(10) PRIMARY KEY NOT NULL,
   `nombreContacto` VARCHAR(30) NOT NULL,
   `emailContacto` VARCHAR(45) NOT NULL,
-  `telefonoContacto` VARCHAR(15) ,
-  `Empresa_codigo` VARCHAR(10) NOT NULL
-
+  `telefonoContacto` VARCHAR(15) 
 );
 
 DROP TABLE IF EXISTS `PARTICULAR`;
