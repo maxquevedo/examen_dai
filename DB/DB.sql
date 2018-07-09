@@ -34,7 +34,7 @@ CREATE TABLE PARTICULAR(
   `direccionParticular` VARCHAR(45) NOT NULL,
   `emailParticular` VARCHAR(100) NOT NULL UNIQUE,
   `telefonoParticular` VARCHAR(20) NOT NULL,
-  `estadoParticular` VARCHAR(15) NOT NULL DEFAULT 'Habilitado';
+  `estadoParticular` VARCHAR(15) NOT NULL DEFAULT 'Habilitado'
 
 );
 
@@ -60,7 +60,7 @@ CREATE TABLE ANALISISMUESTRAS(
   `codigoRamdonCliente` VARCHAR(10) NOT NULL,
   `rutEmpleado` VARCHAR(10)  NULL,
   `rutCliente` VARCHAR(10) NOT NULL,
-  `estadoAnalisisMuestras` VARCHAR(20) NOT NULL DEFAULT 'Sin Revisar';
+  `estadoAnalisisMuestras` VARCHAR(20) NOT NULL DEFAULT 'Sin Revisar'
 );
 
 DROP TABLE IF EXISTS `ANALISISMUESTRASRECIBIDA`;
