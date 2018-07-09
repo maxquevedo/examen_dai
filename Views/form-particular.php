@@ -1,10 +1,10 @@
-<form class="form-control" method="post" action="/examen_dai/Controller/registrarParticular.php" name="registrar">
+<form class="form-control" method="post" action="../Controller/registrarParticular.php" name="registrar">
 	<div class="row form-group ">
 		<h4 class=" col-lg-9 font-weight-bold offset-md-2 text-center"> Particular</h4>
 	</div>
 	<div class="row form-group">
 		<div class="col-md-1 offset-md-4 form-group">
-			<span>Rut  </span>
+			Rut
 		</div>
 		<div class="col-lg-3 ">
 			<input id="rutParticular" type="text" class="form-control" name="rutParticular">
@@ -12,7 +12,7 @@
 	</div>
 	<div class="row form-group">
 		<div class="col-md-1 offset-md-4 form-group">
-			<span>Password  </span>
+			Password
 		</div>
 		<div class="col-lg-3 ">
 			<input id="passwordParticular" type="password" class="form-control" name="passwordParticular">
@@ -20,7 +20,7 @@
 	</div>
 	<div class="row form-group">
 		<div class="col-md-1 offset-md-4 form-group">
-				<span>Nombre  </span>
+			Nombre
 		</div>
 		<div class="col-lg-3 ">
 			<input id="nombreParticular" type="text" class="form-control" name="nombreParticular">
@@ -28,7 +28,7 @@
 	</div>
 	<div class="row form-group">
 		<div class="col-md-1 offset-md-4 form-group">
-			<span>Dirección  </span>
+			Dirección
 		</div>
 		<div class="col-lg-3 ">
 			<input id="direccionParticular" type="text" class="form-control" name="direccionParticular">
@@ -36,7 +36,7 @@
 	</div>
 	<div class="row form-group">
 		<div class="col-md-1 offset-md-4 form-group">
-				<span>Email  </span>
+			Email
 		</div>
 		<div class="col-lg-3 ">
 			<input id="emailParticular" type="email" class="form-control" name="emailParticular">
@@ -44,7 +44,7 @@
 	</div>
 	<div class="row form-group">
 		<div class="col-md-1 offset-md-4 form-group">
-				<span>Teléfono </span>
+			Teléfono
 		</div>
 		<div class="col-lg-3 ">
 			<input id="telefonoParticular" type="text" class="form-control" name="telefonoParticular">
@@ -52,7 +52,7 @@
 	</div>
 	<div class="row form-group">
 		<div class="col-md-1 offset-md-5 form-group">
-			<button type="submit" class="btn btn-secondary">Enviar</button>
+			<button type="submit" class="btn btn-primary">Enviar</button>
 		</div>
 		<div class="col-md1">
 			<button id="btnLimpiar" class="btn btn-secondary">Limpiar</button>

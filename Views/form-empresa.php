@@ -5,7 +5,7 @@
 	</div>
 	<div class="row form-group">
 		<div class="col-md-1 offset-md-4 form-group">
-				<span>Nombre  </span>
+			Nombre
 		</div>
 		<div class="col-lg-3 ">
 			<input id="nombreEmpresa" type="text" class="form-control" name="nombreEmpresa">
@@ -13,7 +13,7 @@
 	</div>
 	<div class="row form-group">
 		<div class="col-md-1 offset-md-4 form-group">
-				<span>Rut  </span>
+			Rut
 		</div>
 		<div class="col-lg-3 ">
 			<input id="rutEmpresa" type="text" class="form-control" name="rutEmpresa">
@@ -21,7 +21,7 @@
 	</div>
 	<div class="row form-group">
 		<div class="col-md-1 offset-md-4 form-group">
-				<span>Password  </span>
+			Password
 		</div>
 		<div class="col-lg-3 ">
 			<input id="passwordEmpresa" type="password" class="form-control" name="passwordEmpresa">
@@ -29,7 +29,7 @@
 	</div>
 	<div class="row form-group">
 		<div class="col-md-1 offset-md-4 form-group">
-				<span>Dirección  </span>
+			Dirección
 		</div>
 		<div class="col-lg-3 ">
 			<input id="direccionEmpresa" type="text" class="form-control" name="direccionEmpresa">
@@ -38,7 +38,7 @@
 	<h4 class=" col-lg-9 font-weight-bold offset-md-2 text-center"> Contacto</h4>
 	<div class="row form-group">
 		<div class="col-md-1 offset-md-4 form-group">
-				<span>Email  </span>
+			Email
 		</div>
 		<div class="col-lg-3 ">
 			<input id="emailContacto" type="email" class="form-control" name="emailContacto">
@@ -46,7 +46,7 @@
 	</div>
 	<div class="row form-group">
 		<div class="col-md-1 offset-md-4 form-group">
-			<span>Nombre  </span>
+			Nombre
 		</div>
 		<div class="col-lg-3 ">
 			<input id="nombreContacto" type="text" class="form-control" name="nombreContacto">
@@ -54,7 +54,7 @@
 	</div>
 	<div class="row form-group">
 		<div class="col-md-1 offset-md-4 form-group">
-			<span>Rut  </span>
+			Rut
 		</div>
 		<div class="col-lg-3 ">
 			<input id="rutContacto" type="text" class="form-control" name="rutContacto">
@@ -62,7 +62,7 @@
 	</div>
 	<div class="row form-group">
 		<div class="col-md-1 offset-md-4 form-group">
-				<span>Teléfono </span>
+			Teléfono
 		</div>
 		<div class="col-lg-3 ">
 			<input id="telefonoContacto" type="text" class="form-control" name="telefonoContacto">
@@ -70,7 +70,7 @@
 	</div>
 	<div class="row form-group">
 		<div class="col-md-1 offset-md-5 form-group">
-			<button type="submit" class="btn btn-secondary">Enviar</button>
+			<button type="submit" class="btn btn-primary">Enviar</button>
 		</div>
 		<div class="col-md1">
 			<button id="btnLimpiar" class="btn btn-secondary">Limpiar</button>
