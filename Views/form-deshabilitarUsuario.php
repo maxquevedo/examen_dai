@@ -33,7 +33,7 @@
 		$("#content").load('../Controller/mostrarEmpresas.php');
 	});
   $("#btnEmpleado").click(function(){
-		$("#content").load('mostrarEmpleados.php');
+		$("#content").load('../Controller/mostrarEmpleados.php');
 	});
 
 </script>
