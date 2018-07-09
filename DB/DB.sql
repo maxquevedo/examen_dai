@@ -34,7 +34,7 @@ CREATE TABLE PARTICULAR(
   `direccionParticular` VARCHAR(45) NOT NULL,
   `emailParticular` VARCHAR(100) NOT NULL UNIQUE,
   `telefonoParticular` VARCHAR(20) NOT NULL,
-  `estadoParticular` VARCHAR(15) NOT NULL DEFAULT 'Habilitado'
+  `estadoParticular` VARCHAR(15) NOT NULL DEFAULT 'Habilitado';
 
 );
 
