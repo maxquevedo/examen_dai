@@ -19,7 +19,7 @@
 			echo "Algo ha salido mal :(";
 		}
 		sleep(4);
-		echo "<script>window.location.href='index.php'</script>";
+		echo "<script>window.location.href='../Views/index.php'</script>";
 	}else{
 		echo "<h1><center>Erro al ingresar contacto :(</center></h1>";
 	}

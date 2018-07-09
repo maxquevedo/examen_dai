@@ -41,7 +41,7 @@
 		</div>
 	</div>
 	<nav class="navbar navbar-dark sticky-top" style="background-color:  rgb(15,105,180);">
-		<ul class="nav">	
+		<ul class="nav">
 			<?php
 				if(isset($_SESSION['tipo'])){
 					$tipo = $_SESSION['tipo'];
@@ -77,7 +77,8 @@
 						break;
 						case 'Particular':
 							echo '<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>';
-							echo '<li class="nav-item"><a class="nav-link" href="#">Ver mis muestras</a></li>';
+							echo '<li class="nav-item"><a class="nav-link" href="../Controller/registrar-envioMuestraParticular.php">Enviar Muestra</a></li>';
+							echo '<li class="nav-item"><a class="nav-link" href="../Controller/ver-envioMuestraParticular.php">Ver mis muestras</a></li>';
 							echo '<li class="nav-item"><a class="nav-link" href="#">Cuenta</a></li>';
 						break;
 						default:

@@ -59,7 +59,8 @@ CREATE TABLE ANALISISMUESTRAS(
   `cantidadMuestra` INT NULL,
   `codigoRamdonCliente` VARCHAR(10) NOT NULL,
   `rutEmpleado` VARCHAR(10)  NULL,
-  `rutCliente` VARCHAR(10) NOT NULL
+  `rutCliente` VARCHAR(10) NOT NULL,
+  `estadoAnalisisMuestras` VARCHAR(20) NOT NULL DEFAULT 'Sin Revisar';
 );
 
 DROP TABLE IF EXISTS `ANALISISMUESTRASRECIBIDA`;
@@ -74,5 +75,10 @@ CREATE TABLE ANALISISMUESTRASRECIBIDA(
 );
 
 INSERT INTO `empleado` (`codigoEmpleado`, `rutEmpleado`, `nombreEmpleado`, `passwordEmpleado`, `emailEmpleado`, `categoriaEmpleado`, `estadoEmpleado`) VALUES
-  (0, '111', 'Administrador1', '111', 'Administrador1@gmail.com', 'A', 'Habilitado');
-  
+  (0, '111', 'Administrador1', '111', 'Administrador1@gmail.com', 'A', 'Habilitado'),
+  (1, '121', 'Receptor1', '111', 'Receptor1@gmail.com', 'R', 'Habilitado'),
+  (2, '131', 'Tecnico1', '111', 'Tenico1@gmail.com', 'T', 'Habilitado');
+
+INSERT INTO `PARTICULAR` (`codigoParticular`, `rutParticular`, `passwordParticular`,`nombreParticular`, `direccionParticular`, `emailParticular`, `telefonoParticular`,`estadoParticular`) VALUES
+  (0, '311', '111','Particular1','Plaza Maipu 322', 'Particular1@gmail.com', '111111111111', 'Habilitado'),
+  (1, '312', '111','Particular2','Plaza Maipu 450', 'Particular2@gmail.com', '111111111112', 'Habilitado');
