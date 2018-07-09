@@ -18,7 +18,6 @@ require '../DB/conexion_bd.php';
 				echo "<script>alert('Bienvenido ".$rs->fields['rutEmpresa']."'); window.location.href='../index.php'</script>";
 			}
 		}
-
 	}else{
 		echo "Lo sentimos, algo ha salido mal.";
 	}
