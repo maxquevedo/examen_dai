@@ -6,7 +6,8 @@
 	$passwordEmpleado=$_POST['passwordEmpleado'];
 	$emailEmpleado= $_POST['emailEmpleado'];
 	$categoriaEmpleado= $_POST['categoriaEmpleado'];
-	$sql = "INSERT INTO EMPLEADO VALUES ('','	$rutEmpleado','$nombreEmpleado','$passwordEmpleado','$emailEmpleado','$categoriaEmpleado','Habiliado')";
+	$estado='Habilitado';
+	$sql = "INSERT INTO EMPLEADO VALUES ('','	$rutEmpleado','$nombreEmpleado','$passwordEmpleado','$emailEmpleado','$categoriaEmpleado','$estado')";
 	if($GLOBALS['db']->Execute($sql)){
 		echo "<script>alert('Se ha registrado el empleado correctamente');</script>";
 		sleep(4);

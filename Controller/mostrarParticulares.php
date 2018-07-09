@@ -1,13 +1,13 @@
 <?php
 	session_start();
   require '../DB/conexion_bd.php';
-	$sql = "SELECT * FROM PARTICULAR";
+	$sql = "SELECT * FROM PARTICULAR Where estadoParticular='Habilitado'";
 ?>
 <h1>Particulares: </h1>
 <table class="table table-bordered table-hover" style="margin-bottom: 5%; margin-top:5%;">
 	<thead>
 		<tr>
-      <th>codigo</th>
+      <th>Codigo</th>
       <th>Rut</th>
       <th>Nombre</th>
       <th>Direccion</th>
@@ -35,7 +35,7 @@
 		?>
 	</tbody>
 </table>
-<form class="form-control" method="post" action="deshabilitarParticular.php" name="deshabilitar">
+<form class="form-control" method="post" action="../Controller/deshabilitarParticular.php" name="deshabilitar">
 	<div class="row form-group">
 		<div class="col-md-3 offset-md-3 form-group">
 				<span><strong>Ingrese rut del Particular: </strong></span>
