@@ -7,7 +7,7 @@
 <table class="table table-bordered table-hover" style="margin-bottom: 5%; margin-top:5%;">
 	<thead>
 		<tr>
-      <th>codigo</th>
+      <th>Codigo</th>
       <th>Rut</th>
       <th>Nombre</th>
       <th>Direccion</th>

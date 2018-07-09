@@ -9,8 +9,8 @@
 				</div>
 				<div class="row form-group">
 					<div class="col-md-2 offset-md-2">
-						<input id="btnAdministrador" type="radio" name="btnTipoUsuario">
-						<label for="btnAdministrador"><h5>Administrador</h5></label>
+						<input id="btnEmpresa" type="radio" name="btnTipoUsuario">
+						<label for="btnEmpresa"><h5>Empresa</h5></label>
 					</div>
 					<div class="col offset-md-1">
 						<input id="btnCliente" type="radio" name="btnTipoUsuario">
@@ -29,8 +29,8 @@
 	$("#btnCliente").click(function(){
 		$("#content").load('../Controller/mostrarParticulares.php');
 	});
-	$("#btnAdministrador").click(function(){
-		$("#content").load('../Controller/mostrarAdministradores.php');
+	$("#btnEmpresa").click(function(){
+		$("#content").load('../Controller/mostrarEmpresas.php');
 	});
   $("#btnEmpleado").click(function(){
 		$("#content").load('mostrarEmpleados.php');
