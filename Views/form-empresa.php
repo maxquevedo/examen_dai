@@ -21,7 +21,7 @@
 	</div>
 	<div class="row form-group">
 		<div class="col-md-1 offset-md-4 form-group">
-			Password
+			Contraseña
 		</div>
 		<div class="col-lg-3 ">
 			<input id="passwordEmpresa" type="password" class="form-control" name="passwordEmpresa">
