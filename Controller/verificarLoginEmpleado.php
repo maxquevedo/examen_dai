@@ -25,13 +25,13 @@ require '../DB/conexion_bd.php';
 				}else if ($rs->fields['categoria']=='T') {
 				echo "<script>alert('Bienvenido ".$rs->fields['nombreEmpleado']." [Nivel: Tecnico de Laboratorio]'); window.location.href='../Views/indexEmpleadoT.php'</script>";
 			}else{
-			echo "<script>alert('El empleado ".$rs->fields['nombreEmpleado']." se encuentra deshabilitado'); window.location.href='../Views/iniciarSesion.php'</script>";
+			echo "<script>alert('El empleado ".$rs->fields['nombreEmpleado']." se encuentra deshabilitado'); window.location.href='../Views/index.php'</script>";
 			}
 		}
 	}
 }
 }
 else{
-		echo "NO";
+		echo "Algo ha salido mal :( ";
 	}
 ?>
