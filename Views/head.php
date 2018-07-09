@@ -40,7 +40,7 @@
 			</div>
 		</div>
 	</div>
-	<nav class="navbar navbar-dark bg-dark">
+	<nav class="navbar navbar-dark sticky-top" style="background-color:  rgb(15,105,180);">
 		<ul class="nav">
 			<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>
 		</ul>

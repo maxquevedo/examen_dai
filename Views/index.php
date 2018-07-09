@@ -6,8 +6,8 @@
 		include('headControlParticular.php');
 	}
 ?>
-	<div class="row" style="padding:30px;">
-		<h1 class="text-align-center">¡Registra tus muestras con nosotros!</h1>
+	<div class="row justify-content-center" style="padding:30px;">
+		<h1>¡Registra tus muestras con nosotros!</h1>
 	</div>
 	<div class="row">
 		<div class="col">
@@ -41,6 +41,3 @@
 			<br>
 		</div>
 	</div>
-<?php
-	require('footer.php');
-?>
