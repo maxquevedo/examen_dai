@@ -60,12 +60,9 @@
 			})
 			$('#bajar').click(function(){
 				var confirma = confirm('¿Seguro que desea dar de baja su cuenta?');
-				if (confirma)
-					alert('Ok');
-
-			})
-
-			
-
+				if (confirma){
+					window.location.href='../Controller/dar_de_baja.php';
+				}
+			});
 		 </script>";
 ?>
