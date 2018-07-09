@@ -1,5 +1,6 @@
 <?php
-  	require '../Model/classParticular.php' ;
+require '../DB/conexion_bd.php';
+require '../Model/classParticular.php' ;
 	$rut = $_POST['rutParticular'];
 	$contraseña = $_POST['passwordParticular'];
   	$nombre = $_POST['nombreParticular'];

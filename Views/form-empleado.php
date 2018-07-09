@@ -1,7 +1,7 @@
 <?php
 	include('head.php');
 ?>
-<form class="form-control" method="post" action="registraEmpleado.php" name="registrar">
+<form class="form-control" method="post" action="../Controller/registrarEmpleado.php" name="registrar">
 	<div class="row form-group ">
 		<h4 class=" col-lg-9 font-weight-bold offset-md-2 text-center"> Empleado</h4>
 	</div>
