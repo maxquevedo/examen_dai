@@ -54,7 +54,7 @@
 											echo '<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>';
 											echo '<li class="nav-item"><a class="nav-link" href="#">Tipo de Analisis</a></li>';
 											echo '<li class="nav-item"><a class="nav-link" href="#">Reportes y Analisis(T)</a></li>';
-											echo '<li class="nav-item"><a class="nav-link" href="#"> Registrar Empleado</a></li>';
+											echo '<li class="nav-item"><a class="nav-link" href="../Views/form-empleado.php"> Registrar Empleado</a></li>';
 											echo '<li class="nav-item"><a class="nav-link" href="#"> Deshabilitar Usuario</a></li>';
 											echo '<li class="nav-item"><a class="nav-link" href="../Views/misDatos.php">Mis datos</a></li>';
 											break;

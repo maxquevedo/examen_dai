@@ -1,5 +1,6 @@
 <?php
 	include('head.php');
+  session_start();
 ?>
 <form class="form-control" method="post" action="../Controller/registrarEmpleado.php" name="registrar">
 	<div class="row form-group ">
