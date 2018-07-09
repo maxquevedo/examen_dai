@@ -15,6 +15,7 @@
 	if($rs = $GLOBALS['db']->Execute($sql)){
   		echo "<script>alert('Se ha registrado el contacto correctamente');</script>";
   		$Empresa->registrarEmpresa();
+			echo "<script>window.location.hfre='../index.php'</script>"
 	}else{
 		echo "<h1><center>Algo ha salido mal :(</center></h1>";
 	}
