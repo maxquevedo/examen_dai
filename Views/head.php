@@ -47,11 +47,31 @@
 					$tipo = $_SESSION['tipo'];
 					switch ($tipo) {
 						case 'Empleado':
-							echo '<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>';
-							echo '<li class="nav-item"><a class="nav-link" href="#">Ingresar Muestra</a></li>';
-							echo '<li class="nav-item"><a class="nav-link" href="#">Ver muestras</a></li>';
-							echo '<li class="nav-item"><a class="nav-link" href="../Views/misDatos.php">Mis datos</a></li>';
-							break;
+						  if(isset($_SESSION['categoria'])){
+							$categoria=$_SESSION['categoria'];
+						     switch ($categoria) {
+						         	case 'A':
+											echo '<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>';
+											echo '<li class="nav-item"><a class="nav-link" href="#">Tipo de Analisis</a></li>';
+											echo '<li class="nav-item"><a class="nav-link" href="#">Reportes y Analisis(T)</a></li>';
+											echo '<li class="nav-item"><a class="nav-link" href="#"> Registrar Empleado</a></li>';
+											echo '<li class="nav-item"><a class="nav-link" href="#"> Deshabilitar Usuario</a></li>';
+											echo '<li class="nav-item"><a class="nav-link" href="../Views/misDatos.php">Mis datos</a></li>';
+											break;
+											case 'R':
+											echo '<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>';
+											echo '<li class="nav-item"><a class="nav-link" href="#">Ingresar Muestra</a></li>';
+											echo '<li class="nav-item"><a class="nav-link" href="#">Muestras Recibidad</a></li>';
+											echo '<li class="nav-item"><a class="nav-link" href="../Views/misDatos.php">Mis datos</a></li>';
+											break;
+											case 'T':
+											echo '<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>';
+											echo '<li class="nav-item"><a class="nav-link" href="#">Muestras para Analisis</a></li>';
+											echo '<li class="nav-item"><a class="nav-link" href="#">Todas las muestras</a></li>';
+											echo '<li class="nav-item"><a class="nav-link" href="../Views/misDatos.php">Mis datos</a></li>';
+											break;
+										}
+									}
 						case 'Empresa':
 							echo '<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>';
 						break;
