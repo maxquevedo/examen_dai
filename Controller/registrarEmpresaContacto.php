@@ -1,10 +1,10 @@
 <?php
 	require '../Model/classEmpresa.php';
-	/*require '../Model/classContacto.php';*/
 	$nombre = $_POST['nombreEmpresa'];
 	$rut = $_POST['rutEmpresa'];
 	$contraseña = $_POST['passwordEmpresa'];
 	$direccion = $_POST['direccionEmpresa'];
+	$estado='Habilitado';
 	$emailContacto=$_POST['emailContacto'];
 	$nombreContacto=$_POST['nombreContacto'];
 	$rutContacto=$_POST['rutContacto'];
