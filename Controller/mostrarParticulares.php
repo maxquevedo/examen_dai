@@ -1,7 +1,6 @@
 <?php
 	session_start();
   require '../DB/conexion_bd.php';
-	require '../Views/head.php';
 	$sql = "SELECT * FROM PARTICULAR";
 ?>
 <h1>Particulares: </h1>

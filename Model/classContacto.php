@@ -20,7 +20,7 @@
 			'$this->telefonoContacto ')";
 		  if($rs = $GLOBALS['db']->Execute($sql)){
 		    echo "<script>alert('Contacto registrado con exito');</script>";
-				echo "<script>window.load.href='../index.php'</script>";
+				echo "<script>window.load.href='../Views/index.php'</script>";
 			else if{
 		    echo "<h3>Error al registrar contacto</h3>";
 		  }

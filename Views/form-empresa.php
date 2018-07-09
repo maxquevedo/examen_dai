@@ -1,15 +1,9 @@
-<<<<<<< HEAD
+
 <?php
 	include('head.php');
 ?>
 <form class="form-control" method="post" action="../Controller/registrarEmpresaContacto.php" name="registrar">
-	<div class="row form-group ">
-		<h4 class=" col-lg-9 font-weight-bold offset-md-2 text-center"> Empresa</h4>
-	</div>
-=======
 
-<form class="form-control" method="post" action="../Controller/registrarEmpresaContacto.php" name="registrar">
->>>>>>> 774974087b00bfbe6a82997e3df9134f4940e891
 	<div class="row form-group">
 		<h4 class="col-lg-12 font-weight-bold text-center"> Empresa</h4>
 	</div>

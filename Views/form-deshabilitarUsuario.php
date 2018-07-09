@@ -27,10 +27,10 @@
 <script>
 
 	$("#btnCliente").click(function(){
-		$("#content").load('mostrarParticulares.php');
+		$("#content").load('../Controller/mostrarParticulares.php');
 	});
 	$("#btnAdministrador").click(function(){
-		$("#content").load('mostrarAdministradores.php');
+		$("#content").load('../Controller/mostrarAdministradores.php');
 	});
   $("#btnEmpleado").click(function(){
 		$("#content").load('mostrarEmpleados.php');
