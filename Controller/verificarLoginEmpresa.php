@@ -6,7 +6,7 @@ require '../DB/conexion_bd.php';
 		if ($rs = $GLOBALS['db']->Execute($sql)){
 			if($rs->EOF){
 				echo "<h1 class='align-middle'><center>Ups, contrasenia o usuario equivocados! </center></h1>";
-				echo "<h2><center><a href='iniciarSesion.php'>Click aca para volver al login.</a></center></h2>";
+				echo "<h2><center><a href='../Views/iniciarSesion.php'>Click aca para volver al login.</a></center></h2>";
 			}else{
 				session_start();
 				$_SESSION['codigo'] = $rs->fields['codigoEmpresa'];
@@ -15,11 +15,10 @@ require '../DB/conexion_bd.php';
         		$_SESSION['password'] = $rs->fields['passwordEmpresa'];
         		$_SESSION['direccion'] = $rs->fields['direccionEmpresa'];
         		$_SESSION['tipo'] = "Empresa";
-				echo "<script>alert('Bienvenido ".$rs->fields['rutEmpresa']."'); window.location.href='form-envioMuestraEmpresa.php'</script>";
+				echo "<script>alert('Bienvenido ".$rs->fields['rutEmpresa']."'); window.location.href='../index.php'</script>";
 			}
 		}
-
 	}else{
-		echo "NO";
+		echo "Lo sentimos, algo ha salido mal.";
 	}
 ?>

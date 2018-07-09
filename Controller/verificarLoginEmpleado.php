@@ -5,7 +5,7 @@ require '../DB/conexion_bd.php';
 		if ($rs = $GLOBALS['db']->Execute($sql)){
 			if($rs->EOF){
 				echo "<h1 class='align-middle'><center>Ups, contrasenia o usuario equivocados! </center></h1>";
-				echo "<h2><center><a href='iniciarSesion.php'>Click aca para volver al login.</a></center></h2>";
+				echo "<h2><center><a href='../Views/iniciarSesion.php'>Click aca para volver al login.</a></center></h2>";
 			}else{
 				session_start();
 				$_SESSION['codigo'] = $rs->fields['codigoEmpleado'];
