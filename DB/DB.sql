@@ -9,7 +9,9 @@ CREATE TABLE EMPRESA(
   `nombreEmpresa` VARCHAR(45) NOT NULL,
   `rutEmpresa` VARCHAR(30) NOT NULL UNIQUE,
   `passwordEmpresa`VARCHAR(15) NOT NULL,
-  `direccionEmpresa` VARCHAR(45) NOT NULL
+  `direccionEmpresa` VARCHAR(45) NOT NULL,
+  `estadoEmpresa` VARCHAR(15) NOT NULL DEFAULT 'Habilitado'
+
 
 );
 
@@ -31,7 +33,8 @@ CREATE TABLE PARTICULAR(
   `nombreParticular` VARCHAR(45) NOT NULL,
   `direccionParticular` VARCHAR(45) NOT NULL,
   `emailParticular` VARCHAR(100) NOT NULL UNIQUE,
-  `telefonoParticular` VARCHAR(20) NOT NULL
+  `telefonoParticular` VARCHAR(20) NOT NULL,
+  `estadoParticular` VARCHAR(15) NOT NULL DEFAULT 'Habilitado'
 
 );
 
@@ -42,7 +45,7 @@ CREATE TABLE EMPLEADO(
   `nombreEmpleado` VARCHAR(45) NOT NULL,
   `passwordEmpleado` VARCHAR(15) NOT NULL,
   `emailEmpleado` VARCHAR(100) NOT NULL UNIQUE,
-  `rolEmpleado` VARCHAR(15) NOT NULL,
+  `categoriaEmpleado` VARCHAR(15) NOT NULL,
   `estadoEmpleado` VARCHAR(15) NOT NULL DEFAULT 'Habilitado'
 
 );
@@ -69,3 +72,7 @@ CREATE TABLE ANALISISMUESTRASRECIBIDA(
   `rutEmpleado` VARCHAR(10)  NULL
 
 );
+
+INSERT INTO `empleado` (`codigoEmpleado`, `rutEmpleado`, `nombreEmpleado`, `passwordEmpleado`, `emailEmpleado`, `categoriaEmpleado`, `estadoEmpleado`) VALUES
+  (0, '111', 'Administrador1', '111', 'Administrador1@gmail.com', 'A', 'Habilitado');
+  
