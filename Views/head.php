@@ -52,7 +52,6 @@
 						     switch ($categoria) {
 						         	case 'A':
 											echo '<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>';
-											echo '<li class="nav-item"><a class="nav-link" href="#">Tipo de Analisis</a></li>';
 											echo '<li class="nav-item"><a class="nav-link" href="#">Reportes y Analisis(T)</a></li>';
 											echo '<li class="nav-item"><a class="nav-link" href="../Views/form-empleado.php"> Registrar Empleado</a></li>';
 											echo '<li class="nav-item"><a class="nav-link" href="../Views/form-deshabilitarUsuario.php"> Deshabilitar Usuario</a></li>';
@@ -60,8 +59,7 @@
 											break;
 											case 'R':
 											echo '<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>';
-											echo '<li class="nav-item"><a class="nav-link" href="#">Ingresar Muestra</a></li>';
-											echo '<li class="nav-item"><a class="nav-link" href="#">Muestras Recibidad</a></li>';
+											echo '<li class="nav-item"><a class="nav-link" href="muestrasRecibidas.php">Ingresar Muestra</a></li>';
 											echo '<li class="nav-item"><a class="nav-link" href="../Views/misDatos.php">Mis datos</a></li>';
 											break;
 											case 'T':
